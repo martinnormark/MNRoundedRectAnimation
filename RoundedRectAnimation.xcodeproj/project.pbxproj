@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D0F55C1618CF948E009368DC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F55C1518CF948E009368DC /* Foundation.framework */; };
+		D0F55C1818CF948E009368DC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F55C1718CF948E009368DC /* CoreGraphics.framework */; };
+		D0F55C1A18CF948E009368DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0F55C1918CF948E009368DC /* UIKit.framework */; };
+		D0F55C2018CF948E009368DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0F55C1E18CF948E009368DC /* InfoPlist.strings */; };
+		D0F55C2218CF948E009368DC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F55C2118CF948E009368DC /* main.m */; };
+		D0F55C2618CF948E009368DC /* MNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F55C2518CF948E009368DC /* MNAppDelegate.m */; };
+		D0F55C2918CF948E009368DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F55C2718CF948E009368DC /* Main.storyboard */; };
+		D0F55C2C18CF948E009368DC /* MNViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F55C2B18CF948E009368DC /* MNViewController.m */; };
+		D0F55C2E18CF948E009368DC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F55C2D18CF948E009368DC /* Images.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D0F55C1218CF948E009368DC /* RoundedRectAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoundedRectAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0F55C1518CF948E009368DC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D0F55C1718CF948E009368DC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D0F55C1918CF948E009368DC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D0F55C1D18CF948E009368DC /* RoundedRectAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoundedRectAnimation-Info.plist"; sourceTree = "<group>"; };
+		D0F55C1F18CF948E009368DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0F55C2118CF948E009368DC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D0F55C2318CF948E009368DC /* RoundedRectAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RoundedRectAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		D0F55C2418CF948E009368DC /* MNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNAppDelegate.h; sourceTree = "<group>"; };
+		D0F55C2518CF948E009368DC /* MNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNAppDelegate.m; sourceTree = "<group>"; };
+		D0F55C2818CF948E009368DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0F55C2A18CF948E009368DC /* MNViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MNViewController.h; sourceTree = "<group>"; };
+		D0F55C2B18CF948E009368DC /* MNViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNViewController.m; sourceTree = "<group>"; };
+		D0F55C2D18CF948E009368DC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D0F55C3418CF948E009368DC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D0F55C3C18CF948E009368DC /* RoundedRectAnimationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RoundedRectAnimationTests-Info.plist"; sourceTree = "<group>"; };
+		D0F55C3E18CF948E009368DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D0F55C4018CF948E009368DC /* RoundedRectAnimationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RoundedRectAnimationTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D0F55C0F18CF948E009368DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F55C1818CF948E009368DC /* CoreGraphics.framework in Frameworks */,
+				D0F55C1A18CF948E009368DC /* UIKit.framework in Frameworks */,
+				D0F55C1618CF948E009368DC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D0F55C0918CF948E009368DC = {
+			isa = PBXGroup;
+			children = (
+				D0F55C1B18CF948E009368DC /* RoundedRectAnimation */,
+				D0F55C3A18CF948E009368DC /* RoundedRectAnimationTests */,
+				D0F55C1418CF948E009368DC /* Frameworks */,
+				D0F55C1318CF948E009368DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D0F55C1318CF948E009368DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D0F55C1218CF948E009368DC /* RoundedRectAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D0F55C1418CF948E009368DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0F55C1518CF948E009368DC /* Foundation.framework */,
+				D0F55C1718CF948E009368DC /* CoreGraphics.framework */,
+				D0F55C1918CF948E009368DC /* UIKit.framework */,
+				D0F55C3418CF948E009368DC /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D0F55C1B18CF948E009368DC /* RoundedRectAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				D0F55C2418CF948E009368DC /* MNAppDelegate.h */,
+				D0F55C2518CF948E009368DC /* MNAppDelegate.m */,
+				D0F55C2718CF948E009368DC /* Main.storyboard */,
+				D0F55C2A18CF948E009368DC /* MNViewController.h */,
+				D0F55C2B18CF948E009368DC /* MNViewController.m */,
+				D0F55C2D18CF948E009368DC /* Images.xcassets */,
+				D0F55C1C18CF948E009368DC /* Supporting Files */,
+			);
+			path = RoundedRectAnimation;
+			sourceTree = "<group>";
+		};
+		D0F55C1C18CF948E009368DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F55C1D18CF948E009368DC /* RoundedRectAnimation-Info.plist */,
+				D0F55C1E18CF948E009368DC /* InfoPlist.strings */,
+				D0F55C2118CF948E009368DC /* main.m */,
+				D0F55C2318CF948E009368DC /* RoundedRectAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D0F55C3A18CF948E009368DC /* RoundedRectAnimationTests */ = {
+			isa = PBXGroup;
+			children = (
+				D0F55C4018CF948E009368DC /* RoundedRectAnimationTests.m */,
+				D0F55C3B18CF948E009368DC /* Supporting Files */,
+			);
+			path = RoundedRectAnimationTests;
+			sourceTree = "<group>";
+		};
+		D0F55C3B18CF948E009368DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D0F55C3C18CF948E009368DC /* RoundedRectAnimationTests-Info.plist */,
+				D0F55C3D18CF948E009368DC /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D0F55C1118CF948E009368DC /* RoundedRectAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D0F55C4418CF948E009368DC /* Build configuration list for PBXNativeTarget "RoundedRectAnimation" */;
+			buildPhases = (
+				D0F55C0E18CF948E009368DC /* Sources */,
+				D0F55C0F18CF948E009368DC /* Frameworks */,
+				D0F55C1018CF948E009368DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RoundedRectAnimation;
+			productName = RoundedRectAnimation;
+			productReference = D0F55C1218CF948E009368DC /* RoundedRectAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D0F55C0A18CF948E009368DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MN;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Martin Høst Normark";
+			};
+			buildConfigurationList = D0F55C0D18CF948E009368DC /* Build configuration list for PBXProject "RoundedRectAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D0F55C0918CF948E009368DC;
+			productRefGroup = D0F55C1318CF948E009368DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D0F55C1118CF948E009368DC /* RoundedRectAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D0F55C1018CF948E009368DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F55C2E18CF948E009368DC /* Images.xcassets in Resources */,
+				D0F55C2018CF948E009368DC /* InfoPlist.strings in Resources */,
+				D0F55C2918CF948E009368DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D0F55C0E18CF948E009368DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0F55C2218CF948E009368DC /* main.m in Sources */,
+				D0F55C2C18CF948E009368DC /* MNViewController.m in Sources */,
+				D0F55C2618CF948E009368DC /* MNAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D0F55C1E18CF948E009368DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F55C1F18CF948E009368DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D0F55C2718CF948E009368DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F55C2818CF948E009368DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D0F55C3D18CF948E009368DC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D0F55C3E18CF948E009368DC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D0F55C4218CF948E009368DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D0F55C4318CF948E009368DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D0F55C4518CF948E009368DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoundedRectAnimation/RoundedRectAnimation-Prefix.pch";
+				INFOPLIST_FILE = "RoundedRectAnimation/RoundedRectAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D0F55C4618CF948E009368DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RoundedRectAnimation/RoundedRectAnimation-Prefix.pch";
+				INFOPLIST_FILE = "RoundedRectAnimation/RoundedRectAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D0F55C0D18CF948E009368DC /* Build configuration list for PBXProject "RoundedRectAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F55C4218CF948E009368DC /* Debug */,
+				D0F55C4318CF948E009368DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D0F55C4418CF948E009368DC /* Build configuration list for PBXNativeTarget "RoundedRectAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D0F55C4518CF948E009368DC /* Debug */,
+				D0F55C4618CF948E009368DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D0F55C0A18CF948E009368DC /* Project object */;
+}
